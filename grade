@@ -1,0 +1,15 @@
+ex0 - serverClient
+	compiles:
+	works:
+	runtime-errors:
+	notes:
+ex1 - dataThread
+	compiles:
+	works:
+	runtime-errors:
+	notes:
+ex2 - p2p
+	compiles:
+	works:
+	runtime-errors:
+	notes:
