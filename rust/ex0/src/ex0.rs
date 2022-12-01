@@ -1,4 +1,5 @@
 use rand::Rng;
+use rand::random;
 use std::io;
 
 pub fn fahrenheit_celsius_converter(temperature: i32, f2c: bool) -> f32 {
@@ -33,6 +34,7 @@ pub fn multi_strings(s: String) -> [String; 4] {
 }
 
 pub fn add_vowels(s: &mut String) {
+    let mut s2 = String::new();
     for c in s.chars() {
         if c == 'a' || c == 'A' || c == 'i' || c == 'I' || c == 'u' || c == 'U'
             || c == 'e' || c == 'E' || c == 'o' || c == 'O' {
