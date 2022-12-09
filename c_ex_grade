@@ -1,24 +1,53 @@
 -----------------------
  ex0 - serverClient
 -----------------------
-	compiles ------ 00/10
+	compiles ------ 10/10
 
-	works --------- 00/10
+	works --------- 03/10
 
-	leak-proof ---- 00/00
+	leak-proof ---- 05/00
 
 	notes
+		client exits immediately after connecting without sending data
 
 -----------------------
  ex1 - dataThread
 -----------------------
-	compiles ------ 00/10
+	compiles ------ 10/10
 
-	works --------- 00/10
+	works --------- 05/10
 
 	leak-proof ---- 00/00
 
 	notes
+		==16537== Conditional jump or move depends on uninitialised value(s)
+		==16537==    at 0x4846A2D: calloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+		==16537==    by 0x109308: writeData (data.c:24)
+		==16537==    by 0x1094C4: main (main.c:14)
+		==16537== 
+		==16537== Conditional jump or move depends on uninitialised value(s)
+		==16537==    at 0x484B917: memmove (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+		==16537==    by 0x10933C: writeData (data.c:27)
+		==16537==    by 0x1094C4: main (main.c:14)
+		==16537== 
+		==16537== Conditional jump or move depends on uninitialised value(s)
+		==16537==    at 0x4846A2D: calloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+		==16537==    by 0x10937D: readData (data.c:36)
+		==16537==    by 0x1094E0: main (main.c:16)
+		==16537== 
+		==16537== Conditional jump or move depends on uninitialised value(s)
+		==16537==    at 0x484B917: memmove (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+		==16537==    by 0x1093AC: readData (data.c:37)
+		==16537==    by 0x1094E0: main (main.c:16)
+		==16537== 
+		==16537== Invalid read of size 4
+		==16537==    at 0x1094ED: main (main.c:17)
+		==16537==  Address 0x4a4f610 is 0 bytes after a block of size 0 alloc'd
+		==16537==    at 0x4846A73: calloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+		==16537==    by 0x10937D: readData (data.c:36)
+		==16537==    by 0x1094E0: main (main.c:16)
+		but data packing and unpacking work and so does your endian function
+		
 
 -----------------------
  ex2 - p2p
@@ -32,5 +61,5 @@
 	notes
 
 -----------------------
-total ----------- 00/40  
+total ----------- 33/40  
 
