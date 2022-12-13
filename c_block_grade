@@ -1,0 +1,24 @@
+-----------------------
+Blockchain Structure
+-----------------------
+	compiles -------- 00/05
+
+	works ----------- 00/15
+		makeBlock------ 0/4
+		addBlock------- 0/2
+		validateChain-- 0/4
+		printBlock----- 0/1
+		printChain----- 0/1
+		freeBlockchain- 0/1
+		saveChain------ 0/1
+		loadChain------ 0/1
+-----------------------
+	leak-proof ---- 00/00
+
+	notes
+
+-----------------------
+	
+-----------------------
+total ----------- 00/20  
+

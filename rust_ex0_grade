@@ -1,0 +1,21 @@
+-----------------------
+ ex0.rs
+-----------------------
+	fahrenheit_to_celsius_converter --- 5/5
+	dice_roll ------------------------- 5/5
+	multi_string ---------------------- 0/5
+	add_vowels ------------------------ 5/5
+	echo_split ------------------------ 5/5
+	input_number ---------------------- 7/7
+	draw_card ------------------------- 3/7
+		card enum didn't derive debug and so I couldn't print it out
+	input_coord ----------------------- 7/7
+	madlib ---------------------------- 0/10
+	ghost_name_generator -------------- 0/10
+	print_board ----------------------- 0/10
+	ship_captain_crew ----------------- 0/30
+	tic_tac_toe ----------------------- 0/30
+
+-----------------------
+total ----------- 37/40  
+
