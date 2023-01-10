@@ -1,0 +1,44 @@
+A.  Name two value types that are known in Solidity Programming?
+uint: an unsigned integer (a non-negative whole number)
+int: a signed integer (a whole number that can be negative)
+
+B.  Name two reference types that are known in Solidity Programming?
+address: a 20-byte Ethereum address
+string: a dynamically-sized UTF-8 string
+
+C.  What are globally available variables in this scope?
+"built-in variables" or "magic variables"
+
+D.  Name two types of `block` variables.
+block.difficulty and block.gaslimit
+
+E.  Name one form of visibility in Solidity that is NOT AVAILABLE in C++.
+internal
+
+F.  Provide me one example of using the SafeMath with Inheritance.
+pragma solidity ^0.7.0;
+
+import "https://github.com/OpenZeppelin/openzeppelin-solidity/contracts/math/SafeMath.sol";
+
+contract MyContract is SafeMath {
+    uint256 value;
+    
+    function increment() public {
+        value = value.add(1);
+    }
+}
+
+G.  Provide me one example of using the SafeMath with the builtIn Library.
+pragma solidity ^0.7.0;
+
+import "https://github.com/OpenZeppelin/openzeppelin-solidity/contracts/math/SafeMath.sol";
+
+contract MyContract {
+    uint256 value;
+
+    using SafeMath for uint256;
+
+    function increment() public {
+        value = value.add(1);
+    }
+}
