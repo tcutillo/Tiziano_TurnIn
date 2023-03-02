@@ -1,4 +1,13 @@
-# HRT ASSIGNMENT
-- Ying Guan <ying@hudson-trading.com>
+## HOUSEKEEPING
 
-I would reach out to her and tell her you are nervous and need additional time.
+Do me a favor and organize your root directory into three folders.
+
+// WORK COMPLETED
+// WORK IN PROGRESS
+// RESUME AND JOB PLACEMENT DOCUMENTS.
+
+
+
+
+### HRT ASSIGNMENT
+- Ying Guan <ying@hudson-trading.com>
