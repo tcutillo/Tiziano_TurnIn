@@ -63,7 +63,7 @@ def main():
         trade_order = trade.order
         ib.sleep(1)
 
-        row = [conID, contractDetails[0].descAppend, "LONG", 10, data.close, (data.close*10)*10, getSeaRule((data.close*10)*10, months_between_dates('05/15/23', contractDetails[0].descAppend.split()[-1])), data.close * 10]
+        row = [conID, contractDetails[0].descAppend, "LONG", 10, data.close, (data.close*10)*10, getSeaRule((data.close*10)*10, months_between_dates('05/15/23', contractDetails[0].descAppend.split()[-1])), ((data.close*10)*10) * 0.5]
         print(row)
         rows.append(row)
         # print(contractDetails[0].descAppend)
