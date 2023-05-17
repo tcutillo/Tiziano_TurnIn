@@ -45,7 +45,7 @@ def main():
     ib = IB()
     ib.connect('127.0.0.1', 7497, clientId=1)
     exchange = 'SMART'
-    contractID = [29157676, 185858451, 415066061]
+    contractID = [29157676, 185858451, 415066061, 285736417, 242880990, 150258828]
     header = ['contractID', 'contract Details', 'Position', 'Quantity', 'Price', 'Cash Allocation', 'SEA Rule', 'REG-T']
     rows = []
 
